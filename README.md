@@ -1,4 +1,7 @@
 # Circuit Breaker Pattern
+## Solution
+Solution is in [circuitbreaker.py](https://github.com/kyphutruong/circuit-breaker-pattern/blob/main/circuitbreaker.py)
+
 ## Documentation
 Exception InvalidMethod is thrown/raised when an invalid method is specified in CircuitBreaker.do_request function
 
