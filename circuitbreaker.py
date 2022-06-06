@@ -133,7 +133,7 @@ class FakeHttpClient():
 
 
 def testBreaker(breaker):
-    url = "https://google.com"
+    url = "https://wetransfer.com"
     method = random.choice(["get","post"])
     resp = breaker.do_request(method, url)
     print(method, url, resp.status_code())
@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
     
     # Then, wait a while, you may sleep ().
-    print(f"Waiting for {y}")
+    print(f"Waiting for {y} seconds")
     time.sleep(y)
     print(f"Open: {breaker.isOpen()}, HalfOpen: {breaker.isHalfOpen()}, Closed: {breaker.isClosed()}")
     
